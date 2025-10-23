@@ -11,6 +11,12 @@ A hack to set a wallpaper on a managed Chrome OS device that does not allow chan
 
 ---
 
+## Website
+Attention all users, for most people it is best to use the website. If you accidentally ended up here, click the link below.
+https://329eeimont-prog.github.io/cros-wa11pap3r/
+
+---
+
 ## Overview
 **cros-wa11pap3r** provides a simple way to set a custom wallpaper on managed Chrome OS devices where wallpaper customization is blocked.  
 It doesn’t require developer mode, extensions, or any system modifications — everything runs entirely in user space.
