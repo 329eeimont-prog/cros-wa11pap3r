@@ -1,1 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>cros-wa11pap3r — Make managed Chromebooks feel personal</title>
+  <meta name="description" content="cros-wa11pap3r — a friendly, lightweight way to display your own wallpaper on managed Chrome OS devices." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --text: #1e293b;
+      --subtext: #64748b;
+      --accent: #4f46e5;
+      --accent-light: #6366f1;
+      --card: #ffffff;
+      --radius: 18px;
+      --shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
+      font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 80px 24px 40px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      color: var(--subtext);
+      font-size: 1.1rem;
+      margin-top: 12px;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 28px;
+      transition: transform .2s ease, box-shadow .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.6rem;
+    }
+    ol, ul {
+      margin: 12px 0 0 20px;
+      color: var(--subtext);
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .3s ease, transform .2s ease;
+    }
+    .button:hover {
+      background: linear-gradient(90deg, var(--accent-light), var(--accent));
+      transform: translateY(-2px);
+    }
+    .screenshot {
+      display: flex;
+      justify-content: center;
+      margin: 24px 0;
+    }
+    .screenshot img {
+      border-radius: var(--radius);
+      max-width: 100%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--subtext);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>cros-wa11pap3r</h1>
+    <p>A friendly, modern way to personalize managed Chromebooks — safely and simply.</p>
+  </header>
+  <main>
+    <div class="screenshot">
+      <img src="https://github.com/user-attachments/assets/20fb451d-e994-40d0-9bf9-e98815dfe461" alt="ChromeOS Wallpaper Example" />
+    </div>
 
+    <div class="card">
+      <h2>Overview</h2>
+      <p><strong>cros-wa11pap3r</strong> lets you display your favorite image as a background on managed Chrome OS devices — without developer mode or system modifications. It’s entirely browser-based, reversible, and secure.</p>
+    </div>
+
+    <div class="card">
+      <h2>Automatic Method (Recommended)</h2>
+      <p>Use the helper tool to easily set your wallpaper through your browser.</p>
+      <a class="button" href="https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html" target="_blank">Open cros-wa11pap3r Helper</a>
+      <ol>
+        <li>Upload a <code>.jpg</code>, <code>.jpeg</code>, or <code>.png</code> image.</li>
+        <li>The helper displays it fullscreen and guides you with an on-screen popup.</li>
+        <li>Right-click Chrome in your taskbar and select <strong>New window</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Manual Method</h2>
+      <ol>
+        <li>Find a web-accessible image you like and open it in a new tab.</li>
+        <li>Zoom in until it fills your Chrome window.</li>
+        <li>Press the <strong>Fullscreen</strong> key.</li>
+        <li>Move your mouse to the bottom, right-click Chrome, and choose <strong>New window</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h2>Want to try it offline?</h2>
+      <p>Download the local version from GitHub Releases and open it in Chrome.</p>
+      <a class="button" href="https://github.com/329eeimont-prog/cros-wa11pap3r/releases" target="_blank">Download from Releases</a>
+    </div>
+  </main>
+  <footer>
+    <p>This tool is for educational and experimental use only. Respect your organization’s policies.</p>
+  </footer>
+</body>
+</html>
