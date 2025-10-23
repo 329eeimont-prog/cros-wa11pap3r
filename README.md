@@ -19,7 +19,7 @@ You can choose between an **automatic method (recommended)** or a **manual setup
 
 ---
 
-## Method 1 — Automatic (Recommended)
+## Method 1 — Automatic Cloud Hosted (Recommended)
 Use the companion tool:  
 ### [cros-wa11pap3r-helper](https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html)
 
@@ -34,7 +34,23 @@ Press **Esc** at any time to exit fullscreen and return to the upload screen.
 
 ---
 
-## Method 2 — Manual Setup
+## Method 2 — Automatic Local Hosted
+Use the companion tool:  
+### [cros-wa11pap3r-helper](https://github.com/329eeimont-prog/cros-wa11pap3r/releases)
+
+1. Download the file from the latest release above
+2. Open the downloaded file by double-clicking (works directly in Chrome).  
+3. Upload a `.jpg`, `.jpeg`, or `.png` file.  
+4. The tool will automatically:
+   - Display your image fullscreen  
+   - Scale it to fit your screen  
+   - Show a popup with the needed instructions
+
+Press **Esc** at any time to exit fullscreen and return to the upload screen.
+
+---
+
+## Method 3 — Manual Setup
 If you’d rather do it manually:
 
 1. Find an image you want to use as your wallpaper (has to be web accessable) and open it using the open in new tab method.
