@@ -12,36 +12,42 @@ A hack to set a wallpaper on a managed Chrome OS device that does not allow chan
 ---
 
 ## Overview
-**cros-wa11pap3r** provides a way to set a custom wallpaper on Chrome OS devices where administrators have disabled wallpaper customization.  
-It doesn’t require developer mode or system-level modifications — the approach is entirely user-space and reversible.
+**cros-wa11pap3r** is a simple visual workaround that lets you set a custom wallpaper on Chrome OS devices where wallpaper customization is disabled by administrators.  
+It works entirely in user space — no developer mode, no flags, no system modifications.
 
 ---
 
-## How It Works
-This method takes advantage of Chrome OS features to:
-- Display a custom image as the background even under wallpaper restrictions  
-- Persist across sessions without elevated privileges  
-- Avoid modification of any protected system files  
+## How to Do It
+1. Find an image you want to use as your wallpaper.  
+   - Make sure the image is hosted online (so you can right-click it and choose **"Open image in new tab"** to get the full-quality version).  
+2. Use your trackpad to **pinch to zoom** until the image fills the entire Chrome window.  
+3. Press the **Fullscreen** key on your keyboard.  
+4. Move your mouse down to the taskbar, **right-click Chrome**, and select **"New window"** to continue using the device normally.
 
-Details are intentionally minimal to keep the method lightweight and adaptable.
+Your “wallpaper” will now stay visible behind the new window, giving the appearance of a custom desktop background.
 
 ---
 
 ## Example
-Below is an example of a wallpaper successfully applied using this approach:
-
 <img width="100%" alt="Wallpaper Example" src="https://github.com/user-attachments/assets/20fb451d-e994-40d0-9bf9-e98815dfe461" />
+
+---
+
+## Notes
+- This method does not alter any system settings.  
+- It may reset when the Chrome session ends or the device restarts.  
+- Works best when you keep the fullscreen window pinned behind your active workspace.
 
 ---
 
 ## Disclaimer
 This project is intended for educational and experimental purposes only.  
-Always follow your organization’s policies and device management rules.
+Respect your organization’s device management policies.
 
 ---
 
 <div align="center">
 
-*Created out of curiosity. Feel free to fork or star the repository if you find it useful.*
+*Created out of curiosity. Fork or star this repository if you found it interesting.*
 
 </div>
