@@ -28,8 +28,7 @@ Use the companion tool:
 3. The tool will automatically:
    - Display your image fullscreen  
    - Scale it to fit your screen  
-   - Show a popup with the next step:  
-     *“Move your mouse to the bottom of the screen, right-click Chrome, and select ‘New window.’”*
+   - Show a popup with the needed instructions
 
 Press **Esc** at any time to exit fullscreen and return to the upload screen.
 
@@ -38,4 +37,9 @@ Press **Esc** at any time to exit fullscreen and return to the upload screen.
 ## Method 2 — Manual Setup
 If you’d rather do it manually:
 
-1. Find an image you want to use as your wallpaper.  
+1. Find an image you want to use as your wallpaper (has to be web accessable) and open it using the open in new tab method.
+2. Zoom into the image so it fills the window
+3. Make the window fullscreen
+4. Press the everything button
+5. Right click the Google Chrome icon in the deck
+6. Click New window
