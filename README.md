@@ -25,9 +25,10 @@ You can choose between an **automatic method (recommended)** or a **manual setup
 
 ---
 
-## Method 1 — Automatic Cloud Hosted (Recommended)
-Use the companion tool:  
-### [cros-wa11pap3r-helper](https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html)
+## Method 1 — Helper Cloud - Automated tool hosted in the cloud (Recommended)
+Use the companion tool:
+### [cros-wa11pap3r Official Website](https://329eeimont-prog.github.io/cros-wa11pap3r/)
+### [Helper Cloud](https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html)
 
 1. Open the link above (works directly in Chrome).  
 2. Upload a `.jpg`, `.jpeg`, or `.png` file.  
@@ -40,9 +41,9 @@ Press **Esc** at any time to exit fullscreen and return to the upload screen.
 
 ---
 
-## Method 2 — Automatic Local Hosted
+## Method 2 — Helper Local - Automated tool you download and run locally
 Use the companion tool:  
-### [cros-wa11pap3r-helper](https://github.com/329eeimont-prog/cros-wa11pap3r/releases)
+### [Helper Local](https://github.com/329eeimont-prog/cros-wa11pap3r/releases)
 
 1. Download the file from the latest release above
 2. Open the downloaded file by double-clicking (works directly in Chrome).  
