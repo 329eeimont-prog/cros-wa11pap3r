@@ -21,7 +21,7 @@ You can choose between an **automatic method (recommended)** or a **manual setup
 
 ## Method 1 — Automatic (Recommended)
 Use the companion tool:  
-### [cros-wa11pap3r-helper](https://yourusername.github.io/cros-wa11pap3r-helper/)
+### [cros-wa11pap3r-helper](https://github.com/329eeimont-prog/cros-wa11pap3r/releases)
 
 1. Open the link above (works directly in Chrome).  
 2. Upload a `.jpg`, `.jpeg`, or `.png` file.  
