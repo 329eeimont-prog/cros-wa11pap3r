@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cros-wa11pap3r-helper</title>
   <style>
+    @font-face{
+      font-family: 'Google Sans';
+      src: url('https://329eeimont-prog.github.io/cros-wa11pap3r/GoogleSans-Regular.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    
     html, body {
       margin: 0;
       padding: 0;
@@ -16,7 +24,7 @@
       justify-content: center;
       align-items: center;
       color: #ccc;
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, Google Sans;
     }
 
     #upload-container {
@@ -95,6 +103,7 @@
       display: none;
     }
   </style>
+  <link rel="preload" href="https://329eeimont-prog.github.io/cros-wa11pap3r/GoogleSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 <body>
   <div id="upload-container">
