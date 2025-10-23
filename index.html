@@ -3,206 +3,181 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>cros-wa11pap3r — Elegant ChromeOS Wallpaper Helper</title>
-  <meta name="description" content="cros-wa11pap3r — A way to personalize managed ChromeOS devices just a little bit more." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>cros-wa11pap3r — Personalize Your (managed) Chromebook</title>
+  <meta name="description" content="cros-wa11pap3r lets you display your own wallpaper on managed Chrome OS devices easily and safely." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0b0e13;
-      --bg-accent: #12161e;
-      --text: #e7ecf4;
-      --muted: #8c96a8;
-      --accent1: #5e5ee6;
-      --accent2: #7b7bff;
-      --glass: rgba(255, 255, 255, 0.05);
+      --bg1: #0e0f12;
+      --bg2: #1c1f24;
+      --accent: #4f8eff;
+      --accent-glow: rgba(79,142,255,0.35);
+      --text: #f5f7fa;
+      --muted: #a1a5ae;
+      --radius: 14px;
       --blur: 18px;
-      --radius: 20px;
-      --shadow: 0 8px 50px rgba(0, 0, 0, 0.6);
-      font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+      --shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: radial-gradient(circle at top right, #131823, #090c11 70%);
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #181b20 0%, #0e0f12 100%);
       color: var(--text);
-      -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
 
     header {
       text-align: center;
-      padding: 90px 20px 60px;
+      padding: 100px 20px 60px;
     }
-    h1 {
-      font-size: 2.8rem;
-      font-weight: 600;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: 0.5px;
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
       margin: 0;
     }
-    p.tagline {
+
+    header p {
       color: var(--muted);
+      max-width: 600px;
+      margin: 14px auto 0;
       font-size: 1.1rem;
-      margin-top: 12px;
-      letter-spacing: 0.3px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 32px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(var(--blur));
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px transparent;
+    }
+
+    .button:hover {
+      background: rgba(79,142,255,0.15);
+      border-color: var(--accent);
+      box-shadow: 0 0 25px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+
+    .hero-img {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    .hero-img img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 50px rgba(0,0,0,0.4);
+      opacity: 0.95;
     }
 
     main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px 100px;
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
     }
 
-    .card {
-      background: var(--glass);
-      backdrop-filter: blur(var(--blur));
-      -webkit-backdrop-filter: blur(var(--blur));
+    section {
+      margin-bottom: 60px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
       border-radius: var(--radius);
-      padding: 36px;
+      padding: 40px;
+      backdrop-filter: blur(var(--blur));
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: transform 0.3s ease, box-shadow 0.4s ease;
+      transition: transform .3s ease, box-shadow .3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 70px rgba(0,0,0,0.75);
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.45);
     }
 
     h2 {
-      margin-top: 0;
-      font-weight: 500;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       font-size: 1.6rem;
-    }
-
-    p, li {
-      color: var(--muted);
-      font-weight: 300;
+      color: var(--accent);
+      margin-top: 0;
     }
 
     ol {
-      margin: 10px 0 0 20px;
-      line-height: 1.8;
+      margin: 12px 0 0 24px;
+      color: var(--muted);
     }
 
-    a.button {
-      display: inline-block;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      color: white;
-      padding: 12px 28px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 500;
-      margin-top: 16px;
-      transition: opacity 0.3s ease, transform 0.2s ease;
-    }
-    a.button:hover {
-      opacity: 0.9;
-      transform: translateY(-3px);
-    }
-
-    .screenshot {
-      display: flex;
-      justify-content: center;
-      margin: 40px 0;
-      filter: drop-shadow(0 10px 50px rgba(0,0,0,0.8));
-    }
-    .screenshot img {
-      max-width: 90%;
-      border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
+    li { margin-bottom: 10px; }
 
     footer {
       text-align: center;
       color: var(--muted);
-      padding: 40px 20px 80px;
       font-size: 0.9rem;
+      padding: 60px 20px 40px;
+      border-top: 1px solid rgba(255,255,255,0.05);
     }
 
-    .glow {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(120px);
-      opacity: 0.3;
-      z-index: -1;
-      animation: float 12s ease-in-out infinite alternate;
-    }
-
-    .glow.one {
-      width: 600px; height: 600px;
-      background: var(--accent1);
-      top: -150px; left: -100px;
-    }
-    .glow.two {
-      width: 500px; height: 500px;
-      background: var(--accent2);
-      bottom: -150px; right: -120px;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0px) scale(1); }
-      100% { transform: translateY(-40px) scale(1.05); }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.1rem; }
+      section { padding: 28px; }
     }
   </style>
 </head>
 <body>
-  <div class="glow one"></div>
-  <div class="glow two"></div>
-
   <header>
     <h1>cros-wa11pap3r</h1>
-    <p class="tagline">Silky-smooth control for personalizing managed Chromebooks.</p>
+    <p>Give your managed Chromebook a personal touch — securely, beautifully, and effortlessly.</p>
+    <a class="button" href="https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html" target="_blank">Launch Helper Tool</a>
+    <div class="hero-img">
+      <img src="https://github.com/user-attachments/assets/20fb451d-e994-40d0-9bf9-e98815dfe461" alt="ChromeOS Wallpaper Example">
+    </div>
   </header>
 
   <main>
-    <div class="screenshot">
-      <img src="https://github.com/user-attachments/assets/20fb451d-e994-40d0-9bf9-e98815dfe461" alt="Wallpaper Example" />
-    </div>
-
-    <section class="card">
+    <section>
       <h2>Overview</h2>
-      <p><strong>cros-wa11pap3r</strong> gives you a way to express yourself — even on managed Chrome OS devices. No developer mode, no system hacks. Just a bit of silky, browser-based flow that sets your image fullscreen and lets you keep it behind a new window.</p>
+      <p><strong>cros-wa11pap3r</strong> lets you show your favorite image as a wallpaper on managed Chrome OS devices — all inside Chrome, no system changes or dev mode required. It’s fast, private, and reliable even on low-end hardware.</p>
     </section>
 
-    <section class="card">
-      <h2>Automatic (Cloud) — Recommended</h2>
-      <p>Start instantly with the hosted helper below:</p>
-      <a class="button" href="https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html" target="_blank">Launch cros-wa11pap3r Helper</a>
+    <section>
+      <h2>Automatic Setup (Recommended)</h2>
       <ol>
-        <li>Upload your <code>.jpg</code>, <code>.jpeg</code>, or <code>.png</code> file.</li>
-        <li>The helper fills your screen with it, in full, silky clarity.</li>
-        <li>Follow the smooth pop-up guide to finish your setup.</li>
+        <li>Open the <a href="https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html" target="_blank">cloud helper</a>.</li>
+        <li>Upload a <code>.jpg</code>, <code>.jpeg</code>, or <code>.png</code>.</li>
+        <li>The helper goes fullscreen, fits the image, and guides you with a small popup.</li>
       </ol>
     </section>
 
-    <section class="card">
-      <h2>Manual Method</h2>
+    <section>
+      <h2>Manual Setup</h2>
       <ol>
-        <li>Open your chosen image in a new browser tab (must be online).</li>
-        <li>Zoom or pinch until it fills the entire window.</li>
-        <li>Press <strong>Fullscreen</strong> (or F11).</li>
-        <li>Right-click the Chrome icon on your taskbar → <strong>New window</strong>.</li>
+        <li>Find a hosted image you like and open it in a new tab.</li>
+        <li>Zoom in until it fills your Chrome window.</li>
+        <li>Press <strong>Fullscreen</strong>.</li>
+        <li>Right-click Chrome on your taskbar → <strong>New window</strong>.</li>
       </ol>
     </section>
 
-    <section class="card" style="text-align:center;">
-      <h2>Prefer to work offline?</h2>
-      <p>Download the local version and open it directly in Chrome.</p>
-      <a class="button" href="https://github.com/329eeimont-prog/cros-wa11pap3r/releases" target="_blank">Get Local Helper</a>
+    <section style="text-align:center">
+      <h2>Offline Option</h2>
+      <p>Prefer to keep it local? Download the standalone version and run it directly in Chrome.</p>
+      <a class="button" href="https://github.com/329eeimont-prog/cros-wa11pap3r/releases" target="_blank">Download from GitHub</a>
     </section>
   </main>
 
   <footer>
-    <p>Designed for peaceful experimentation — respect your organization’s policies.</p>
+    <p>© 2025 cros-wa11pap3r. For educational and experimental use. Respect your organization’s policies.</p>
   </footer>
 </body>
 </html>
