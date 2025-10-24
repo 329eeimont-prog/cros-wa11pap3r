@@ -3,7 +3,7 @@
 # cros-wa11pap3r  
 A hack to set a wallpaper on a managed Chrome OS device that does not allow changing the wallpaper.
 
-src=<img width="1365" height="767" alt="Screenshot 2025-10-24 7 37 45 AM" src="https://github.com/user-attachments/assets/2c3833af-1c53-4d99-b470-0c214f26d6cb"/>
+<img width="1365" height="767" alt="A wallpaper set using cros-wa11pap3r." src="https://github.com/user-attachments/assets/2c3833af-1c53-4d99-b470-0c214f26d6cb"/>
 
 *(Example of a wallpaper set using this method)*
 
