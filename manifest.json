@@ -1,0 +1,21 @@
+{
+  "name": "cros-wa11pap3r",
+  "short_name": "cros-wallp",
+  "description": "The OG wallpaper changer for managed Chromebooks.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0f14",
+  "theme_color": "#0f1720",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
