@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cros-wa11pap3r-helper</title>
   <style>
-    @font-face{
-      font-family: 'Google Sans';
-      src: url('https://329eeimont-prog.github.io/cros-wa11pap3r/GoogleSans-Regular.ttf') format('truetype');
-      font-weight: 100 900;
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+
+  
+    .inter-<uniquifier> {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
       font-style: normal;
-      font-display: swap;
     }
     
     html, body {
@@ -24,7 +28,7 @@
       justify-content: center;
       align-items: center;
       color: #ccc;
-      font-family: system-ui, Google Sans;
+      font-family: system-ui, Inter;
     }
 
     #upload-container {
