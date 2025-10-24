@@ -102,6 +102,34 @@
   </style>
 
 </head>
+
+<script>
+  // PWA install prompt handler
+  let deferredPrompt;
+  const installBtn = document.getElementById('installPWA');
+  installBtn.style.display = 'none';
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'inline-block';
+  });
+
+  installBtn.addEventListener('click', async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') console.log('PWA install accepted');
+    deferredPrompt = null;
+    installBtn.style.display = 'none';
+  });
+
+  window.addEventListener('appinstalled', () => {
+    console.log('PWA installed successfully');
+    installBtn.style.display = 'none';
+  });
+</script>
+
 <body>
   <div class="page">
 
@@ -116,6 +144,7 @@
             <a class="btn-primary" href="https://329eeimont-prog.github.io/cros-wa11pap3r/cloud-helper.html" target="_blank">Helper Cloud</a>
             <a class="btn-ghost" href="https://github.com/329eeimont-prog/cros-wa11pap3r/releases" target="_blank">Helper Local</a>
             <a class="btn-ghost" href="#how">How it works</a>
+            <button id="installPWA" class="btn-ghost">Install App</button>
           </div>
         </div>
 
